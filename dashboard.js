@@ -7,15 +7,6 @@ let postbtn = document.getElementById("post-btn");
 
 
 
-
-
-
-
-
-
-
-
-
 const chineseFoodRecipes = {
   dish1: {
     name: "Kung Pao Chicken",
@@ -230,7 +221,7 @@ for (name in chineseFoodRecipes) {
 
 async function dataEntry(params) {
   console.log(`${recipename.value} ${recipeingre.value} ${recipemethod.value} `)
- let data = localStorage.getItem("currentuserino")
+ let data = localStorage.getItem("currentuserinfo")
  data=JSON.parse(data)
   try {
     const { error } = await supabase
@@ -253,10 +244,14 @@ async function dataEntry(params) {
 
 postbtn.addEventListener('click',dataEntry)
 
-
-
-
-
 if(datecontent){
   datecontent.textContent = new Date().getFullYear();
 }
+
+
+
+
+
+
+
+

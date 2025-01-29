@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap');
+ body {
+    background-color: #FEE0D6;
+    color: #71604E;
+    font-family: Poppins, serif;
+    margin: 0;
+    padding: 0;
+}
+.logo-text{
+    color: #71604E;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    background-color: #FEE0D6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #71604E;
+    background-color: #FEE0D6;
+    border: 2px solid #FEE0D6;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sidebar a:hover {
+    color: #faebe7 !important;
+    background-color: #C4464A;
+    border-color: #C4464A;
+    a{
+        color: #faebe7;
+    }
+   
+}
